@@ -1,0 +1,124 @@
+\chapter{Приложение}
+\label{appendix:appendix}
+
+\section{Плагины WordPress}
+\label{sec:wp_plugins}
+
+Для расширения функций WordPress используются плагины представленные ниже.
+ 
+\subsection{Плагин Display Posts}
+\label{sec:plugin_displayposts}
+
+Плагин для отображения списка записей по категориям.
+
+Адрес сайта: \url{https://displayposts.com/}
+
+Руководство пользователя: \url{https://displayposts.com/docs/parameters/}
+
+Пример настройки:
+\small
+\begin{lstlisting}[frame=single, breaklines=true]
+[display-posts category_id="103" include_title="true" include_link="true" include_content="false" content_class="entry-content" order="ASC" include_excerpt_dash="true" excerpt_more="..." orderby="title" posts_per_page="1000"] 
+\end{lstlisting}
+\normalsize
+
+
+\subsection{Плагин HTTP / HTTPS Remover}
+\label{sec:plugin_http_https_remover}
+
+Этот плагин создает относительные ссылки путем удаления http + https из URL.
+
+Адрес сайта: \url{https://ru.wordpress.org/plugins/http-https-remover/}
+
+\subsection{Плагин WP Statistics}
+\label{sec:plugin_wp_statistics}
+
+Полная аналитика и статистика для сайта на WordPress.
+
+Адрес сайта: \url{https://ru.wordpress.org/plugins/wp-statistics/}
+
+\subsection{Плагин PDF Embedder}
+\label{sec:plugin_pdf_embedder}
+
+Встраивайте PDF-файлы прямо в ваши записи и страницы, с гибкой шириной и высотой.
+
+Адрес сайта: \url{https://ru.wordpress.org/plugins/pdf-embedder/}
+Руководство пользователя: \url{https://wp-pdf.com/free-instructions/}
+
+Пример настройки:
+\small
+\begin{lstlisting}[frame=single, breaklines=true]
+[pdf-embedder url="https://mysite.com/wp-content/uploads/2015/01/Plan-Summary.pdf" width="500"]
+\end{lstlisting}
+\normalsize
+
+\subsection{Плагин WP Media Category Management}
+\label{sec:plugin_wp_media_category_management}
+
+Плагин для обеспечения возможностей управления категориями медиафайлов в административном интерфейсе WordPress.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/wp-media-category-management/}
+
+\subsection{Плагин Hide Featured Image}
+\label{sec:plugin_hide_featured_image}
+
+Плагин для отображения/скрытия избранных изображений на отдельных записях. Например избранные изображения отображаются, когда записи отображаются списком, но при входе в отдельную запись, избранное изображение не показывается.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/hide-featured-image/}
+
+\subsection{Плагин Events Manager}
+\label{sec:plugin_events_manager}
+
+Плагин для регистрации событий и управление бронированием для WordPress. Позволяет создавать периодические события, указывать местоположения, использовать карты Google, RSS, поддерживает регистрацию бронирования и многое другое.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/events-manager/}
+
+\subsection{Плагин Cerber Security, Antispam and Malware Scan}
+\label{sec:plugin_serber}
+
+Защищает WordPress от хакерских атак, спама, троянов и вредоносного ПО.
+Предотвращает атаки перебора ограничением попыток входа через форму логина, XML-RPC/REST API и с использованием куки.
+Отслеживает активность как пользователей так и нарушителей с уведомлениями по email, а также в браузере и на мобильных устройствах.
+Защита от спама как собственными средствами, так и через. Google reCAPTCHA, для форм регистрации, форм контактов и комментариев.
+Сканер на вредоносное ПО, проверка целостности и наблюдение за изменением файлов.
+Усиление защиты WordPress гибкими правилами защиты и умными алгоритмами.
+Ограничение доступа посредством черных и белых списков IP адресов.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/wp-cerber/}
+
+\subsection{Плагин bbPress}
+\label{sec:plugin_bbPress}
+
+bbPress — простое и бесконечно мощное программное обеспечение для форума, созданное участниками разработки WordPress.
+Форум bbPress прост в интеграции, лёгок в использовании и создан для масштабирования вместе с растущим сообществом.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/bbpress/}
+
+\subsection{Плагин WP Super Cache}
+\label{sec:plugin_wp_super_cache}
+
+WP Super Cache самый популярный плагин для кеширования страниц в WordPress.
+Плагин создаёт статичные html и php файлы – копии страниц WordPress и сохраняет их в кеш: /wp-content/cache/supercache/. Потом, при заходе пользователя на какую-либо страницу сайта, WordPress, вместо того, чтобы создать страницу с нуля, отдаёт браузеру заранее сохранённую копию html-страницы из кеша или собирает её максимально быстро из готовых php-файлов.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/wp-super-cache/}
+
+\subsection{Плагин Yandex Mail}
+\label{sec:plugin_yandex_mail}
+
+Отправка писем через Yandex SMTP.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/yandex-mail/}
+
+\subsection{Плагин Embed Plus for YouTube}
+\label{sec:plugin_youtube}
+
+Просмотр видео Youtube с сайта WordPress.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/youtube-embed-plus/}
+
+\subsection{Плагин NextGEN Галерея}
+\label{sec:plugin_NextGEN}
+
+NextGEN Gallery — самый популярный плагин фотогалереи для WordPress, и, учитывая более 6 миллионов загрузок, это один из самых популярных WordPress плагинов в принципе. NextGEN позволяет вам создавать красивые галереи, у него много возможностей: загрузка больших изображений, группировка галерей в альбомы и многое другое.
+
+Адрес сайта: \url{http://ru.wordpress.org/plugins/nextgen-gallery/}

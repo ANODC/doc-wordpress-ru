@@ -1,0 +1,42 @@
+%% Преамбула TeX-файла
+
+% 1. Стиль и язык
+\documentclass[utf8x, 14pt]{G7-32} % Стиль (по умолчанию будет 14pt)
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+% Настройки листингов.
+\ifPDFTeX
+\include{listings.inc}
+\else
+\usepackage{local-minted}
+\fi
+
+% Полезные макросы листингов.
+\usepackage{listings}
+\include{macros.inc}
+
+\newcommand{\MainDomain}{digitaleconomy.space}
+\newcommand{\MailDomain}{@digitaleconomy.space}
+\newcommand{\CompanyName}{АНО "Цифровая Страна"}
+
+%\usepackage[T2A]{fontenc}
+%\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
+%\def\labelitemi{--} %длинный минус для списоков
+\graphicspath{{images/}}%путь к рисункам
+
+
+\begin{document}
+\input{wp-doc-title}% это титульный лист
+\tableofcontents % это оглавление, которое генерируется автоматически
+\input{introduce}% основное окно программы
+\input{admin}% 
+\input{media}% 
+\input{pages}% 
+\input{posts}% 
+\input{slider}% 
+\input{events}% 
+\input{forum}% 
+\input{appendix}% 
+\end{document}
