@@ -1,0 +1,11 @@
+*.log
+Report.pdf
+*.toc
+*.gz
+*.aux
+*.out
+*.bak
+*.dvi
+*.nlo
+*.pdf
+*.lof
